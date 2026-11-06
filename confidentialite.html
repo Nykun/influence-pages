@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Confidentialité · influence</title>
+<style>
+  :root { --fond: #fbfaf7; --texte: #1f2328; --discret: #57606a; --lien: #0b6bcb; --filet: #e3e1dc; }
+  @media (prefers-color-scheme: dark) {
+    :root { --fond: #0f1115; --texte: #e6e8eb; --discret: #9aa4ae; --lien: #6cb4ff; --filet: #2a2f37; }
+  }
+  body { margin: 0; background: var(--fond); color: var(--texte); font: 17px/1.65 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; }
+  main { max-width: 40rem; margin: 0 auto; padding: 3.5rem max(16px, env(safe-area-inset-left, 0px)) 3rem max(16px, env(safe-area-inset-right, 0px)); }
+  h1 { font-size: 1.9rem; margin: 0 0 .2rem; letter-spacing: -0.01em; text-wrap: balance; }
+  h2 { font-size: 1.15rem; margin: 2.2rem 0 .4rem; }
+  .chapeau { color: var(--discret); margin: 0 0 1.5rem; }
+  a { color: var(--lien); }
+  code { font: .92em ui-monospace, "Cascadia Code", Consolas, monospace; }
+  ul { padding-left: 1.2rem; }
+  li + li { margin-top: .3rem; }
+  footer { margin-top: 3rem; padding-top: 1rem; border-top: 1px solid var(--filet); color: var(--discret); font-size: .9rem; }
+</style>
+</head>
+<body>
+<main>
+  <h1>Règles de confidentialité de « influence »</h1>
+  <p class="chapeau"><a href="./">influence</a> · outil personnel de préparation de brouillons Gmail</p>
+
+  <h2>Ce qu'est influence</h2>
+  <p>Un outil privé et non commercial, utilisé au sein d'un seul foyer pour préparer des brouillons de réponse dans
+    Gmail. Il n'est pas proposé au public.</p>
+
+  <h2>Accès demandés à Google</h2>
+  <ul>
+    <li>Lire les mails, les fils et les brouillons (<code>gmail.readonly</code>).</li>
+    <li>Créer de nouveaux brouillons (<code>gmail.drafts.create</code>).</li>
+    <li>Déposer dans la boîte un message de récapitulatif, sans l'envoyer (<code>gmail.insert</code>).</li>
+    <li>Créer un libellé pour ranger ce récapitulatif (<code>gmail.labels</code>).</li>
+  </ul>
+  <p>Aucun de ces accès ne permet d'envoyer, de modifier ou de supprimer un mail : chaque réponse est relue et envoyée
+    par la titulaire de la boîte elle-même.</p>
+
+  <h2>Où vont les données</h2>
+  <p>Le traitement a lieu sur l'ordinateur personnel du propriétaire de l'outil. Le texte des fils à traiter est
+    transmis à Claude (Anthropic) pour rédiger les brouillons. Les données ne sont ni vendues, ni utilisées pour de la
+    publicité, ni pour entraîner des modèles d'intelligence artificielle généralistes.</p>
+
+  <h2>Conservation</h2>
+  <p>Les copies locales des mails et des pièces jointes sont effacées après 90 jours. Ce que l'outil a appris du style
+    de rédaction reste sur l'ordinateur du foyer.</p>
+
+  <h2>Usage limité</h2>
+  <p>L'utilisation et le transfert vers toute autre application des informations reçues des API Google par influence
+    respectent les <a href="https://developers.google.com/terms/api-services-user-data-policy">règles d'utilisation des
+    données utilisateur des services d'API Google</a>, y compris les exigences d'usage limité.</p>
+
+  <h2>Retirer l'accès</h2>
+  <p>Chaque utilisateur peut retirer l'accès à tout moment depuis
+    <a href="https://myaccount.google.com/permissions">myaccount.google.com/permissions</a>.</p>
+
+  <h2>Contact</h2>
+  <p>L'adresse d'assistance indiquée sur l'écran de consentement Google de l'application.</p>
+
+  <footer>Mise à jour : 6 novembre 2026</footer>
+</main>
+</body>
+</html>
